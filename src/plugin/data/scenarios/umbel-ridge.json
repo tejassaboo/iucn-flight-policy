@@ -1,0 +1,140 @@
+{
+  "id": "umbel-ridge",
+  "category": "refusal",
+  "overlays": [
+    "personal_travel",
+    "outside_air_section"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "I'm taking a week's holiday in Dublin from March 20th, and while I'm there I'll spend an afternoon with our partners at the Irish Environmental Network. Since it's partly work, can IUCN buy my flight from Zurich to Dublin on the 20th?",
+  "trip": {
+    "traveller_name": "Hannah Murphy",
+    "traveller_title": "Communications Officer",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "DUB",
+    "travel_date": "2027-03-20",
+    "booking_date": "2027-02-15",
+    "purpose": "A week's holiday in Dublin; during it, an afternoon visit to a partner network in Dublin",
+    "purpose_kind": "PERSONAL",
+    "personal_part": "WORK_VISIT_ADDED_TO_PERSONAL_TRIP",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Marc Dubois",
+        "subject": "PERSONAL_DAYS"
+      }
+    ],
+    "notes": [
+      "The line manager agreed to the partner visit during the holiday."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "DUB",
+        "date": "2027-03-20",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "09:20",
+            "minutes": [
+              120
+            ]
+          },
+          "aerlingus": {
+            "carrier": "EI",
+            "depart": "12:05",
+            "minutes": [
+              120
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 26000
+          },
+          {
+            "slot": "aerlingus-economy",
+            "flight": "aerlingus",
+            "cabin": "ECONOMY",
+            "fare_cents": 23500
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "REFUSE",
+    "offer_slots": [],
+    "cabins": [
+      "NONE"
+    ],
+    "reason_codes": [
+      "OUTSIDE_POLICY_SCOPE",
+      "PERSONAL_TRAVEL_NOT_COVERED"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "COMBINED_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        535,
+        536
+      ],
+      "sha256": "af577202daba2ae1609f6bc84f73b9fc2e1913406ffded665f0e9c13da52cfcd",
+      "quote": "In instances where the primary objective of travel is personal travel, but the person chooses to add on a work-related visit, the allowable costs are the incremental costs of the work-related trip. IUCN's Global",
+      "why": "a mainly personal trip: only the work visit's incremental costs are allowable"
+    },
+    {
+      "lines": [
+        531,
+        533
+      ],
+      "sha256": "32303f80c90361052ef4a925334d8c0238cd1f23717914a36a9c13c9cad57fec",
+      "quote": "Personal travel may be added to work-related travel with the agreement of an individual's line manager. In such cases the incremental cost of any personal travel must be borne by the individual. The incremental cost should be evidenced by submitting quotations with and without the personal travel.",
+      "why": "personal travel added with the line manager's agreement; incremental cost borne by the traveller"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        536,
+        538
+      ],
+      "quote": "IUCN's Global Travel Insurance will only cover the staff member for a personal trip li nked to duty travel if they stay in the city where their work will be conducted.",
+      "why": "insurance cover for the personal part, not who buys the flight"
+    }
+  ],
+  "design_notes": "Lines 535-536: where the primary objective of travel is personal and a work-related visit is added, the allowable costs are the incremental costs of the work-related trip. The visit is in Dublin, where the holiday already takes the traveller, so it adds no air cost: IUCN buys no ticket."
+}

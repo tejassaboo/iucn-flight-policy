@@ -1,0 +1,147 @@
+{
+  "id": "rushy-knap",
+  "category": "distractor",
+  "overlays": [
+    "multi_leg",
+    "dearer_option"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Zurich to Istanbul on February 17th for the forestry partners' workshop the next morning. I'd rather take the nonstop if the policy is fine with it.",
+  "trip": {
+    "traveller_name": "Nora Albrecht",
+    "traveller_title": "Programme Officer, Business and Biodiversity",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "IST",
+    "travel_date": "2027-02-17",
+    "booking_date": "2027-01-19",
+    "purpose": "Forest landscape restoration workshop with Turkish partners",
+    "purpose_kind": "WORKSHOP",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": true,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Marc Dubois",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": []
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "IST",
+        "date": "2027-02-17",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "08:40",
+            "minutes": [
+              155
+            ]
+          },
+          "frankfurt": {
+            "carrier": "LH",
+            "via": [
+              "FRA"
+            ],
+            "depart": "06:15",
+            "minutes": [
+              50,
+              160
+            ],
+            "layovers": [
+              300
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 41200
+          },
+          {
+            "slot": "frankfurt-economy",
+            "flight": "frankfurt",
+            "cabin": "ECONOMY",
+            "fare_cents": 38900
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "swiss-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "ALTERNATE_ROUTE_WITHIN_MARGIN",
+      "MOST_DIRECT_ROUTE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        230,
+        231
+      ],
+      "sha256": "0091d22509999e6541655c48c3ff5784478b9f00c9602c16644d2e18bbc3615b",
+      "quote": "a) The route - normally the most direct route should be taken, unless there are significant financial gains from taking an alternative route.",
+      "why": "the most direct route unless an alternative gives significant financial gains"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        413,
+        413
+      ],
+      "quote": "The cost of airport lounges is allowed for stopovers exceeding 4 hours.",
+      "why": "a long stopover allows a lounge; it does not choose the ticket"
+    }
+  ],
+  "design_notes": "Lines 230-231: normally the most direct route, unless an alternative route brings significant financial gains. The Frankfurt connection saves CHF 23 of CHF 412 (under 6%), with five hours on the ground: not significant. The nonstop the traveller asked for. The five-hour stopover would earn a lounge (line 413), which chooses nothing."
+}

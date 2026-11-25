@@ -1,0 +1,158 @@
+{
+  "id": "ivory-garth",
+  "category": "boundary_twin",
+  "overlays": [],
+  "twin_of": "hollin-sand",
+  "twin_fact": "the train takes 239 or 240 minutes",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Please book me a flight from Zurich to Frankfurt on February 4th for the KfW portfolio review, which starts at 10:00 the next day.",
+  "trip": {
+    "traveller_name": "Anna Weber",
+    "traveller_title": "Senior Finance Officer, Donor Relations",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "FRA",
+    "travel_date": "2027-02-04",
+    "booking_date": "2027-01-07",
+    "purpose": "Portfolio review with KfW Development Bank",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 240,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Marc Dubois",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": []
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "FRA",
+        "date": "2027-02-04",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "07:15",
+            "minutes": [
+              50
+            ]
+          },
+          "lufthansa": {
+            "carrier": "LH",
+            "depart": "09:30",
+            "minutes": [
+              50
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 21000
+          },
+          {
+            "slot": "lufthansa-economy",
+            "flight": "lufthansa",
+            "cabin": "ECONOMY",
+            "fare_cents": 19500
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "lufthansa-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "BOOKING",
+      "CLASS_OF_TRAVEL",
+      "COST_EFFECTIVENESS",
+      "TRANSPORTATION"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        220,
+        221
+      ],
+      "sha256": "2ed235ff52c35460436d43c457459a6fb0e652a8884776b7060418fc3c6df088",
+      "quote": "When the travel duration in one direction is under four hours by train, travel should be undertaken by train rather than air.",
+      "why": "under four hours by train in one direction: train, not air"
+    },
+    {
+      "lines": [
+        233,
+        233
+      ],
+      "sha256": "c5705bff1c50dbe28109fba9ee5d0576e8b4275fb96481356bacd5b44e436301",
+      "quote": "b) The cost - the best possible fare should be secured.",
+      "why": "the best possible fare"
+    },
+    {
+      "lines": [
+        251,
+        251
+      ],
+      "sha256": "7f5dd6d18f5332def84b8c878e1e5d21a285d7e56611d12397ca52ae5dca7282",
+      "quote": "All travel must be by economy class, with the following exceptions:",
+      "why": "all travel economy, with the exceptions below"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        288,
+        290
+      ],
+      "quote": "First class travel is authorized on sea, train, bus or other public transportation systems for travel durations exceeding two hours",
+      "why": "first class on trains, not on flights"
+    }
+  ],
+  "design_notes": "The train takes exactly 240 minutes, four hours, which is not under four hours (line 220), so the flight is allowed: economy at the best possible fare, Lufthansa at CHF 195."
+}

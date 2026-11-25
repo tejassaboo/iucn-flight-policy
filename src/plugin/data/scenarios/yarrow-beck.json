@@ -1,0 +1,150 @@
+{
+  "id": "yarrow-beck",
+  "category": "flag",
+  "overlays": [
+    "approval_required",
+    "outside_air_section",
+    "upgrade_not_taken"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [
+    "sallow-tarn",
+    "bracken-weir"
+  ],
+  "ambiguity_note": "none: a sign-off is required and missing; the text is clear",
+  "request": "Nairobi to Amsterdam on March 9th for the peatlands partners' meeting on the 11th. Economy is fine.",
+  "trip": {
+    "traveller_name": "Joseph Kiprono",
+    "traveller_title": "Programme Officer, Peatlands",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "REGIONAL_OFFICE",
+    "rank": "STAFF",
+    "origin": "NBO",
+    "destination": "AMS",
+    "travel_date": "2027-03-09",
+    "booking_date": "2027-02-04",
+    "purpose": "Global peatlands partners' meeting",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "The peatlands project budget of the Ecosystem Management Programme at Headquarters",
+    "own_cost_centre": false,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Peter Mwangi",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": [
+      "The trip is charged to a project of another unit, the Ecosystem Management Programme."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "NBO",
+        "destination": "AMS",
+        "date": "2027-03-09",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "kenya": {
+            "carrier": "KQ",
+            "depart": "23:55",
+            "minutes": [
+              505
+            ]
+          },
+          "klm": {
+            "carrier": "KL",
+            "depart": "09:30",
+            "minutes": [
+              505
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "kenya-economy",
+            "flight": "kenya",
+            "cabin": "ECONOMY",
+            "fare_cents": 76000
+          },
+          {
+            "slot": "klm-economy",
+            "flight": "klm",
+            "cabin": "ECONOMY",
+            "fare_cents": 73500
+          },
+          {
+            "slot": "klm-premium",
+            "flight": "klm",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 121000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "FLAG_FOR_APPROVAL",
+    "offer_slots": [
+      "klm-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "APPROVAL_REQUIRED"
+    ],
+    "approvers": [
+      "BUDGET_HOLDER"
+    ],
+    "clauses": [
+      "AUTHORIZATION"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        564,
+        566
+      ],
+      "sha256": "c0e897fc1b34e122caae7cae480f6189492f5d25e39e6e37e9a528ae215530f2",
+      "quote": "In cases where travel is funded by a different cost centre than the traveller's own, the t ravel must also be authorized by the budget holder.",
+      "why": "another unit's budget: its budget holder authorizes too"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    },
+    {
+      "lines": [
+        233,
+        233
+      ],
+      "sha256": "c5705bff1c50dbe28109fba9ee5d0576e8b4275fb96481356bacd5b44e436301",
+      "quote": "b) The cost - the best possible fare should be secured.",
+      "why": "the best possible fare"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Lines 562-566: the TA must be approved before any commitments are made, and travel funded by a different cost centre than the traveller's own must also be authorized by the budget holder. Only the line manager has signed: hold the ticket the request would get, the cheapest economy fare (KLM), for the budget holder. Premium economy would be allowed (505 minutes) but economy is what was asked."
+}

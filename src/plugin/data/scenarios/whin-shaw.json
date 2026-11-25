@@ -1,0 +1,164 @@
+{
+  "id": "whin-shaw",
+  "category": "flag",
+  "overlays": [
+    "approval_required",
+    "dearer_option"
+  ],
+  "twin_of": "lichen-bay",
+  "twin_fact": "business class authorised by a Global Director or by a Regional Director",
+  "flag_twins": [
+    "lichen-bay",
+    "cobble-fern"
+  ],
+  "ambiguity_note": "none: a sign-off is required and missing; the text is clear",
+  "request": "Zurich to Johannesburg on February 14th, overnight. The Regional Director for Southern Africa, whose workshop it is, has authorised business class because I go straight from the Asia missions into the workshop. Please book business; if it needs someone else's sign-off first, hold it for them.",
+  "trip": {
+    "traveller_name": "Elena Petrova",
+    "traveller_title": "Senior Programme Manager, World Heritage",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "JNB",
+    "travel_date": "2027-02-14",
+    "booking_date": "2027-01-13",
+    "purpose": "World Heritage site managers' workshop for southern Africa",
+    "purpose_kind": "WORKSHOP",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "BUSINESS",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Jonas Berg",
+        "subject": "TRAVEL_AUTHORIZATION"
+      },
+      {
+        "role": "REGIONAL_DIRECTOR",
+        "name": "Thandiwe Nkosi",
+        "subject": "BUSINESS_CLASS"
+      }
+    ],
+    "notes": [
+      "The traveller returns from field missions in Asia on February 13th and opens the World Heritage site managers' workshop in Johannesburg on the morning of the 15th, with no time to recover between the two."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "JNB",
+        "date": "2027-02-14",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "21:40",
+            "minutes": [
+              630
+            ]
+          },
+          "southafrican": {
+            "carrier": "SA",
+            "depart": "20:15",
+            "minutes": [
+              630
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 89000
+          },
+          {
+            "slot": "swiss-premium",
+            "flight": "swiss",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 145000
+          },
+          {
+            "slot": "swiss-business",
+            "flight": "swiss",
+            "cabin": "BUSINESS",
+            "fare_cents": 420000
+          },
+          {
+            "slot": "southafrican-economy",
+            "flight": "southafrican",
+            "cabin": "ECONOMY",
+            "fare_cents": 86000
+          },
+          {
+            "slot": "southafrican-premium",
+            "flight": "southafrican",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 139000
+          },
+          {
+            "slot": "southafrican-business",
+            "flight": "southafrican",
+            "cabin": "BUSINESS",
+            "fare_cents": 398000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "FLAG_FOR_APPROVAL",
+    "offer_slots": [
+      "southafrican-business"
+    ],
+    "cabins": [
+      "BUSINESS"
+    ],
+    "reason_codes": [
+      "APPROVAL_REQUIRED"
+    ],
+    "approvers": [
+      "GLOBAL_DIRECTOR"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "CLASS_OF_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        263,
+        267
+      ],
+      "sha256": "c1b7b4508c5b57d47e5212dccb54dce663672e27979237d53b65a0028304cd69",
+      "quote": "ii. There are exceptional reasons as to why business class travel is required. For example, if the traveller has back -to-back commitments requiring excessive travel with no opportunity for recuperation between commitments. In such instances, business class travel must be authorised before the booking is made by a Global Director for Headquarters' staff, and by R egional Directors for regional staff .",
+      "why": "exceptional business class, authorised before booking by the right director"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Lines 263-267: business class for exceptional reasons must be authorised before booking by a Global Director for Headquarters staff, and by Regional Directors for regional staff. The traveller is Headquarters staff, and only a Regional Director signed: hold the cheapest business fare for the Global Director. Approval required, not 'no compliant offer'."
+}

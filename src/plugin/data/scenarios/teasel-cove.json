@@ -1,0 +1,126 @@
+{
+  "id": "teasel-cove",
+  "category": "refusal",
+  "overlays": [
+    "outside_air_section"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Please book me Washington Dulles to Mexico City on February 16th for the watershed field visit. I'm happy to go.",
+  "trip": {
+    "traveller_name": "Carlos Ortega",
+    "traveller_title": "Programme Officer, Mesoamerica Watersheds",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "REGIONAL_OFFICE",
+    "rank": "STAFF",
+    "origin": "IAD",
+    "destination": "MEX",
+    "travel_date": "2027-02-16",
+    "booking_date": "2027-01-26",
+    "purpose": "Field visit to a watershed restoration site",
+    "purpose_kind": "FIELD_MISSION",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the Washington office's water programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_MEASURE_FOUND",
+    "accompanies_flight": "",
+    "sign_offs": [],
+    "notes": [
+      "The field site lies in a district where a severe haemorrhagic fever outbreak was declared on January 20th; the health authority has no vaccine or treatment and has asked visitors to stay away.",
+      "The line manager's check on January 25th found no precaution that brings the risk down to an acceptable level, and the TA was not approved.",
+      "The traveller works in IUCN's Washington, DC office."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "IAD",
+        "destination": "MEX",
+        "date": "2027-02-16",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "united": {
+            "carrier": "UA",
+            "depart": "09:15",
+            "minutes": [
+              245
+            ]
+          },
+          "aeromexico": {
+            "carrier": "AM",
+            "depart": "13:30",
+            "minutes": [
+              245
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "united-economy",
+            "flight": "united",
+            "cabin": "ECONOMY",
+            "fare_cents": 38000
+          },
+          {
+            "slot": "aeromexico-economy",
+            "flight": "aeromexico",
+            "cabin": "ECONOMY",
+            "fare_cents": 35500
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "REFUSE",
+    "offer_slots": [],
+    "cabins": [
+      "NONE"
+    ],
+    "reason_codes": [
+      "TRAVEL_RISK_NOT_MITIGATED"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "HEALTH_SAFETY_SECURITY",
+      "HEALTH_SECURITY_WARNINGS"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        125,
+        126
+      ],
+      "sha256": "4c3798180dea42cdd5dd85dfe221984dc16eb71c4512009972c079e9096a1651",
+      "quote": "If there is any doubt as to whether staff may be exposed to a high security or health risk, then they should not travel.",
+      "why": "any doubt about a high security or health risk: do not travel"
+    },
+    {
+      "lines": [
+        157,
+        158
+      ],
+      "sha256": "65f58217160ddc2d3871fb2f73360b72a6b2f9bbad8f2071b86b440d096b6c07",
+      "quote": "Where such measures to reduce the risks to acceptable levels cannot be found, travel should not be undertaken.",
+      "why": "no measures that reduce the risk to acceptable levels: no travel"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Lines 125-126: if there is any doubt as to whether staff may be exposed to a high security or health risk, they should not travel; lines 157-158: where measures to reduce the risks to acceptable levels cannot be found, travel should not be undertaken. The line manager found none and did not approve the TA: no ticket is bought."
+}

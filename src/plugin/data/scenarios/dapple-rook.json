@@ -1,0 +1,186 @@
+{
+  "id": "dapple-rook",
+  "category": "easy",
+  "overlays": [
+    "dearer_option"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Zurich to Rome on February 9th for the consultation at FAO the next day. The organisers may still move it by a day or two, so I need a ticket I can change without paying much.",
+  "trip": {
+    "traveller_name": "Matteo Bianchi",
+    "traveller_title": "Senior Policy Adviser, Food Systems",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "FCO",
+    "travel_date": "2027-02-09",
+    "booking_date": "2027-01-12",
+    "purpose": "Consultation on nature-positive food systems at FAO",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": true,
+    "rail_minutes": 425,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Ines Moreau",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": [
+      "FAO has said the consultation may move to February 11th or 12th."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "FCO",
+        "date": "2027-02-09",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "early": {
+            "carrier": "LX",
+            "depart": "07:10",
+            "minutes": [
+              80
+            ]
+          },
+          "midday": {
+            "carrier": "LX",
+            "depart": "12:40",
+            "minutes": [
+              80
+            ]
+          },
+          "munich": {
+            "carrier": "LH",
+            "via": [
+              "MUC"
+            ],
+            "depart": "06:30",
+            "minutes": [
+              50,
+              80
+            ],
+            "layovers": [
+              70
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "early-saver",
+            "flight": "early",
+            "cabin": "ECONOMY",
+            "fare_cents": 18000
+          },
+          {
+            "slot": "early-flex",
+            "flight": "early",
+            "cabin": "ECONOMY",
+            "fare_cents": 26500,
+            "refundable": true
+          },
+          {
+            "slot": "midday-saver",
+            "flight": "midday",
+            "cabin": "ECONOMY",
+            "fare_cents": 19500
+          },
+          {
+            "slot": "midday-flex",
+            "flight": "midday",
+            "cabin": "ECONOMY",
+            "fare_cents": 27900,
+            "refundable": true
+          },
+          {
+            "slot": "munich-flex",
+            "flight": "munich",
+            "cabin": "ECONOMY",
+            "fare_cents": 29000,
+            "refundable": true
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "early-flex"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "FLEXIBLE_FARE_NEEDED",
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "PLANNING_AND_BUDGET"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        238,
+        240
+      ],
+      "sha256": "1dfec37b2b8e8888f2d751fa92f99b9e211b149cd796bb22f35103eed387b435",
+      "quote": "d) Flexibility - where travel dates are likely to change, e.g. as a result of changes to meeting dates, the ticket purchased should have the possibility of being changed without significant extra cost being incurred.",
+      "why": "dates likely to change: a ticket that can be changed without significant extra cost"
+    },
+    {
+      "lines": [
+        548,
+        550
+      ],
+      "sha256": "fdd57018929da7eba8a158e99b966cc3405ffeceb49512428b5d4ec69af589ac",
+      "quote": "being secured. In the event that travel dates are likely to change, flexibility can be obtained by buying tickets which include options for change or cancellation. This approach is likely to be more cost effective than buying tickets at the \"last minute\".",
+      "why": "tickets with options for change when dates are likely to change"
+    },
+    {
+      "lines": [
+        233,
+        233
+      ],
+      "sha256": "c5705bff1c50dbe28109fba9ee5d0576e8b4275fb96481356bacd5b44e436301",
+      "quote": "b) The cost - the best possible fare should be secured.",
+      "why": "the best possible fare"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "The dates are likely to change, so the ticket should be changeable without significant extra cost (lines 238-240; lines 548-549). The cheapest changeable fare is the 07:10 Swiss nonstop at CHF 265; the cheaper saver fares cannot be changed. The train to Rome takes about seven hours, so flying is fine."
+}

@@ -1,0 +1,177 @@
+{
+  "id": "osprey-dell",
+  "category": "multi_rule",
+  "overlays": [
+    "dearer_option"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Nairobi to Dubai on February 26th for the Gulf donors' round table the next morning. The Director General has authorised business for this trip given my back-to-back schedule. If you can get me first class, do; otherwise business.",
+  "trip": {
+    "traveller_name": "Grace Njeri",
+    "traveller_title": "Regional Director, Eastern and Southern Africa",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "REGIONAL_OFFICE",
+    "rank": "REGIONAL_DIRECTOR",
+    "origin": "NBO",
+    "destination": "DXB",
+    "travel_date": "2027-02-26",
+    "booking_date": "2027-01-25",
+    "purpose": "Gulf donors' round table on African drylands",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "FIRST",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the Eastern and Southern Africa regional office",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Olivier Laurent",
+        "subject": "TRAVEL_AUTHORIZATION"
+      },
+      {
+        "role": "DIRECTOR_GENERAL",
+        "name": "Helena Strand",
+        "subject": "BUSINESS_CLASS"
+      }
+    ],
+    "notes": [
+      "The traveller flies in from the African Union summit in Addis Ababa on February 25th and goes straight on to the round table, with no day between them."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "NBO",
+        "destination": "DXB",
+        "date": "2027-02-26",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "kenya": {
+            "carrier": "KQ",
+            "depart": "08:30",
+            "minutes": [
+              285
+            ]
+          },
+          "emirates": {
+            "carrier": "EK",
+            "depart": "10:45",
+            "minutes": [
+              285
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "kenya-economy",
+            "flight": "kenya",
+            "cabin": "ECONOMY",
+            "fare_cents": 41000
+          },
+          {
+            "slot": "kenya-business",
+            "flight": "kenya",
+            "cabin": "BUSINESS",
+            "fare_cents": 165000
+          },
+          {
+            "slot": "emirates-economy",
+            "flight": "emirates",
+            "cabin": "ECONOMY",
+            "fare_cents": 43000
+          },
+          {
+            "slot": "emirates-business",
+            "flight": "emirates",
+            "cabin": "BUSINESS",
+            "fare_cents": 172000
+          },
+          {
+            "slot": "emirates-first",
+            "flight": "emirates",
+            "cabin": "FIRST",
+            "fare_cents": 390000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "kenya-business"
+    ],
+    "cabins": [
+      "BUSINESS"
+    ],
+    "reason_codes": [
+      "EXCEPTIONAL_REASONS_AUTHORISED",
+      "FIRST_CLASS_NOT_PERMITTED",
+      "LONG_FLIGHT_APPROVED",
+      "UPGRADE_NOT_ELIGIBLE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER",
+      "DIRECTOR_GENERAL"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "CLASS_OF_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        278,
+        278
+      ],
+      "sha256": "f4f90a4fcdb875c646c66cf8cb23fd8990049d31b0b17fb3d128b39ccf50f424",
+      "quote": "First class travel is not permitted.",
+      "why": "first class travel is not permitted"
+    },
+    {
+      "lines": [
+        268,
+        269
+      ],
+      "sha256": "ef8ec5d14e7a922a9339d36d0b343ffcced7e561a26d3c03becc4d20a8d6980b",
+      "quote": "Business class travel of Regional and Global Directors must be authorised by the Director General.",
+      "why": "business class of Regional and Global Directors: the Director General"
+    },
+    {
+      "lines": [
+        263,
+        267
+      ],
+      "sha256": "c1b7b4508c5b57d47e5212dccb54dce663672e27979237d53b65a0028304cd69",
+      "quote": "ii. There are exceptional reasons as to why business class travel is required. For example, if the traveller has back -to-back commitments requiring excessive travel with no opportunity for recuperation between commitments. In such instances, business class travel must be authorised before the booking is made by a Global Director for Headquarters' staff, and by R egional Directors for regional staff .",
+      "why": "exceptional business class, authorised before booking by the right director"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Line 278: first class travel is not permitted. Business is: a Regional Director's business class must be authorised by the Director General (lines 268-269), who did, for exceptional back-to-back reasons (lines 263-265). The cheapest business fare is Kenya Airways at CHF 1,650."
+}

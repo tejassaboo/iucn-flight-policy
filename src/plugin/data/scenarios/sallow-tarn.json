@@ -1,0 +1,170 @@
+{
+  "id": "sallow-tarn",
+  "category": "distractor",
+  "overlays": [
+    "outside_air_section",
+    "dearer_option"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Zurich to Hong Kong on March 15th for the Pearl River delta wetlands workshop on the 17th. Premium economy if the policy allows it. Heads-up: the project's donor only pays for economy seats.",
+  "trip": {
+    "traveller_name": "Felix Hartmann",
+    "traveller_title": "Programme Officer, Global Water Programme",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "HKG",
+    "travel_date": "2027-03-15",
+    "booking_date": "2027-02-09",
+    "purpose": "Pearl River delta wetlands workshop",
+    "purpose_kind": "WORKSHOP",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "PREMIUM_ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "The delta wetlands project grant, held by the Ecosystem Management Programme",
+    "own_cost_centre": false,
+    "donor_cabin_terms": "ECONOMY_ONLY",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Jonas Berg",
+        "subject": "TRAVEL_AUTHORIZATION"
+      },
+      {
+        "role": "BUDGET_HOLDER",
+        "name": "Sara Lindholm",
+        "subject": "BUDGET"
+      }
+    ],
+    "notes": [
+      "The donor's grant rules allow economy seats only."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "HKG",
+        "date": "2027-03-15",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "13:10",
+            "minutes": [
+              695
+            ]
+          },
+          "cathay": {
+            "carrier": "CX",
+            "depart": "22:45",
+            "minutes": [
+              695
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 87000
+          },
+          {
+            "slot": "swiss-premium",
+            "flight": "swiss",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 149000
+          },
+          {
+            "slot": "cathay-economy",
+            "flight": "cathay",
+            "cabin": "ECONOMY",
+            "fare_cents": 84000
+          },
+          {
+            "slot": "cathay-premium",
+            "flight": "cathay",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 142000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "cathay-premium"
+    ],
+    "cabins": [
+      "PREMIUM_ECONOMY"
+    ],
+    "reason_codes": [
+      "PREMIUM_ECONOMY_ALLOWED"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER",
+      "BUDGET_HOLDER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "CLASS_OF_TRAVEL",
+      "EQUITABLE_APPLICABILITY"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        181,
+        183
+      ],
+      "sha256": "a913f23ce84b242af8de91d36259ab3badd1ff54b4ab39f0dc7126fcfffc65dc",
+      "quote": "This policy applies to duty travel irrespective of the funding source and irrespective of donors' own rules. In the event that certain costs are allowed by this policy but not by the donor funding the travel, the disallowed costs should be charged against other funding sources.",
+      "why": "the policy applies irrespective of donors' own rules"
+    },
+    {
+      "lines": [
+        253,
+        253
+      ],
+      "sha256": "282fa3dd2b56c703d8296b6ce63334b778f58b0a81380aa9ef4c0107bd7c41c4",
+      "quote": "a) Economy plus/premium class1 is allowed for total flying time of over 8 hours",
+      "why": "economy plus/premium for total flying time over eight hours"
+    },
+    {
+      "lines": [
+        564,
+        566
+      ],
+      "sha256": "c0e897fc1b34e122caae7cae480f6189492f5d25e39e6e37e9a528ae215530f2",
+      "quote": "In cases where travel is funded by a different cost centre than the traveller's own, the t ravel must also be authorized by the budget holder.",
+      "why": "another unit's budget: its budget holder authorizes too"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Lines 181-183: the policy applies irrespective of donors' own rules; costs it allows that the donor does not are charged to other funding. At 695 minutes premium economy is allowed (line 253): the cheapest, Cathay at CHF 1,420. Another programme's budget pays, and its budget holder has authorized the travel (lines 564-566)."
+}

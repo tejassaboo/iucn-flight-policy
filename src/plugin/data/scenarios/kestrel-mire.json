@@ -1,0 +1,152 @@
+{
+  "id": "kestrel-mire",
+  "category": "boundary_twin",
+  "overlays": [
+    "date_arithmetic"
+  ],
+  "twin_of": "jasper-wold",
+  "twin_fact": "the certificate is dated 2026-10-05 or 2026-03-05",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Zurich to Dubai on January 18th for the Gulf mangrove partners' meeting the next day. My specialist's certificate saying I need to fly business is on file with HR, so business class please. If business isn't possible, book what the policy allows; I have to be at the meeting.",
+  "trip": {
+    "traveller_name": "Claire Fontaine",
+    "traveller_title": "Senior Programme Officer, Marine and Polar",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "DXB",
+    "travel_date": "2027-01-18",
+    "booking_date": "2026-12-03",
+    "purpose": "Gulf mangrove restoration partners' meeting",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "BUSINESS",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "2026-03-05",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Henrik Larsen",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": []
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "DXB",
+        "date": "2027-01-18",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "10:15",
+            "minutes": [
+              370
+            ]
+          },
+          "emirates": {
+            "carrier": "EK",
+            "depart": "14:40",
+            "minutes": [
+              370
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 52000
+          },
+          {
+            "slot": "swiss-business",
+            "flight": "swiss",
+            "cabin": "BUSINESS",
+            "fare_cents": 245000
+          },
+          {
+            "slot": "emirates-economy",
+            "flight": "emirates",
+            "cabin": "ECONOMY",
+            "fare_cents": 49500
+          },
+          {
+            "slot": "emirates-business",
+            "flight": "emirates",
+            "cabin": "BUSINESS",
+            "fare_cents": 228000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "emirates-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "MEDICAL_CERTIFICATE_LAPSED",
+      "UPGRADE_NOT_ELIGIBLE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "CLASS_OF_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        255,
+        262
+      ],
+      "sha256": "8183e42b480c53b9f8f78eae741213500613bafb208bf5deec230441984a06eb",
+      "quote": "b) Business class is allowed only if: i. The person travelling has provided Human Resources with a valid medical certificate, issued by the relevant specialist, advising that the employee must travel in business class. In such cases the medical certificate should be renewed every six months. IUCN reserves the right to refer the person to an IUCN nominated doctor for confirmation of the validity of a medical certificate issued by the person's own doctor.",
+      "why": "business with a specialist's certificate held by HR, renewed every six months"
+    },
+    {
+      "lines": [
+        251,
+        251
+      ],
+      "sha256": "7f5dd6d18f5332def84b8c878e1e5d21a285d7e56611d12397ca52ae5dca7282",
+      "quote": "All travel must be by economy class, with the following exceptions:",
+      "why": "all travel economy, with the exceptions below"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Lines 257-260: the certificate must be renewed every six months. It is dated March 5th, 2026, so its six months ended on September 5th, 2026, before today (December 3rd); it was not renewed, so it grounds no business seat. No other exception applies and the flight is under eight hours: economy, the fallback the traveller gave."
+}

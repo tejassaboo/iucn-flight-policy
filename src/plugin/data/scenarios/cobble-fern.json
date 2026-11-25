@@ -1,0 +1,169 @@
+{
+  "id": "cobble-fern",
+  "category": "easy",
+  "overlays": [],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Please book me Washington Dulles to Bogota on February 3rd for the paramo water-fund workshop the next morning. I'd like business class if the policy covers it; if not, economy is fine, I have to be there.",
+  "trip": {
+    "traveller_name": "Laura Mendes",
+    "traveller_title": "Programme Coordinator, Water and Wetlands",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "REGIONAL_OFFICE",
+    "rank": "STAFF",
+    "origin": "IAD",
+    "destination": "BOG",
+    "travel_date": "2027-02-03",
+    "booking_date": "2027-01-05",
+    "purpose": "Water-fund design workshop with Colombian utilities",
+    "purpose_kind": "WORKSHOP",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "BUSINESS",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the Washington office's water programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Rebecca Lindqvist",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": [
+      "The traveller works in IUCN's Washington, DC office."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "IAD",
+        "destination": "BOG",
+        "date": "2027-02-03",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "united": {
+            "carrier": "UA",
+            "depart": "08:20",
+            "minutes": [
+              305
+            ]
+          },
+          "avianca": {
+            "carrier": "AV",
+            "depart": "12:10",
+            "minutes": [
+              305
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "united-economy",
+            "flight": "united",
+            "cabin": "ECONOMY",
+            "fare_cents": 41000
+          },
+          {
+            "slot": "united-business",
+            "flight": "united",
+            "cabin": "BUSINESS",
+            "fare_cents": 138000
+          },
+          {
+            "slot": "avianca-economy",
+            "flight": "avianca",
+            "cabin": "ECONOMY",
+            "fare_cents": 38500
+          },
+          {
+            "slot": "avianca-business",
+            "flight": "avianca",
+            "cabin": "BUSINESS",
+            "fare_cents": 124000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "avianca-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "UPGRADE_NOT_ELIGIBLE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "CLASS_OF_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        251,
+        251
+      ],
+      "sha256": "7f5dd6d18f5332def84b8c878e1e5d21a285d7e56611d12397ca52ae5dca7282",
+      "quote": "All travel must be by economy class, with the following exceptions:",
+      "why": "all travel economy, with the exceptions below"
+    },
+    {
+      "lines": [
+        255,
+        262
+      ],
+      "sha256": "8183e42b480c53b9f8f78eae741213500613bafb208bf5deec230441984a06eb",
+      "quote": "b) Business class is allowed only if: i. The person travelling has provided Human Resources with a valid medical certificate, issued by the relevant specialist, advising that the employee must travel in business class. In such cases the medical certificate should be renewed every six months. IUCN reserves the right to refer the person to an IUCN nominated doctor for confirmation of the validity of a medical certificate issued by the person's own doctor.",
+      "why": "business with a specialist's certificate held by HR, renewed every six months"
+    },
+    {
+      "lines": [
+        263,
+        267
+      ],
+      "sha256": "c1b7b4508c5b57d47e5212dccb54dce663672e27979237d53b65a0028304cd69",
+      "quote": "ii. There are exceptional reasons as to why business class travel is required. For example, if the traveller has back -to-back commitments requiring excessive travel with no opportunity for recuperation between commitments. In such instances, business class travel must be authorised before the booking is made by a Global Director for Headquarters' staff, and by R egional Directors for regional staff .",
+      "why": "exceptional business class, authorised before booking by the right director"
+    },
+    {
+      "lines": [
+        270,
+        272
+      ],
+      "sha256": "0d707ef993a9ac823c74aff54320650cdb5f89bbb108d443195e80296cd08809",
+      "quote": "iii. Another entity is paying for the ticket and it would not be appropriate to refuse the offer, e.g. when accompanying a VIP on a trip and that person is travelling in business class.",
+      "why": "business when another entity pays and refusing would be inappropriate"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "All travel is economy (line 251). Business is allowed only with a medical certificate, pre-authorised exceptional reasons or another entity paying (lines 255-272); none applies, so the cheapest economy fare, Avianca."
+}

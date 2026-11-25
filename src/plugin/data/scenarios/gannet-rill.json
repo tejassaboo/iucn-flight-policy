@@ -1,0 +1,137 @@
+{
+  "id": "gannet-rill",
+  "category": "boundary_twin",
+  "overlays": [],
+  "twin_of": "flint-heron",
+  "twin_fact": "the nonstop is scheduled at 481 or 480 minutes",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Zurich to Nairobi on February 7th for the regional planning week, which starts on the 9th. Premium economy if the policy allows it; otherwise economy.",
+  "trip": {
+    "traveller_name": "Thomas Keller",
+    "traveller_title": "Programme Officer, Species Survival",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "NBO",
+    "travel_date": "2027-02-07",
+    "booking_date": "2027-01-08",
+    "purpose": "Regional programme planning week at the Nairobi office",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "PREMIUM_ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Sofia Lindgren",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": []
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "NBO",
+        "date": "2027-02-07",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "22:30",
+            "minutes": [
+              480
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 82000
+          },
+          {
+            "slot": "swiss-premium",
+            "flight": "swiss",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 138000
+          },
+          {
+            "slot": "swiss-business",
+            "flight": "swiss",
+            "cabin": "BUSINESS",
+            "fare_cents": 395000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "swiss-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LONG_FLIGHT_CONDITION_NOT_MET",
+      "UPGRADE_NOT_ELIGIBLE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "CLASS_OF_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        253,
+        253
+      ],
+      "sha256": "282fa3dd2b56c703d8296b6ce63334b778f58b0a81380aa9ef4c0107bd7c41c4",
+      "quote": "a) Economy plus/premium class1 is allowed for total flying time of over 8 hours",
+      "why": "economy plus/premium for total flying time over eight hours"
+    },
+    {
+      "lines": [
+        251,
+        251
+      ],
+      "sha256": "7f5dd6d18f5332def84b8c878e1e5d21a285d7e56611d12397ca52ae5dca7282",
+      "quote": "All travel must be by economy class, with the following exceptions:",
+      "why": "all travel economy, with the exceptions below"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Line 253 needs total flying time of over 8 hours; the nonstop is scheduled at exactly 480 minutes, which is not over eight hours, so economy (line 251), the fallback the traveller gave."
+}

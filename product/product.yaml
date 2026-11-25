@@ -1,0 +1,13 @@
+_ > nanoagent.plugin.v0001.ProductConfig:
+tagline: "One flight request, a conservation union's real travel policy: book it, refuse it, or hold it for sign-off"
+summary: "An agent handles one traveller's flight request under the IUCN Travel Policy and Procedures (Version 2.1, April 2019), read verbatim. It reads the trip record, searches a simulated flight world (real airports and airlines, synthetic schedules and fares in Swiss francs) and submits a decision with the offer, cabin, reason, approver and policy section. A deterministic verifier rebuilds the offers and the policy's answer itself and checks every field. Twenty-four cases cover the train-instead-of-air rule to the minute, premium economy on both sides of its flying-time limit, business class only on a medical certificate, a pre-authorised exception or another payer, donors who offer more than the policy allows, home leave and holidays with a work visit, and the policy's own unclear words."
+highlights:
+  - "The verbatim policy: no paraphrase, no rules restated in the task"
+  - "Exact boundaries: 239 against 240 minutes by train, 481 against 480 minutes of flying, certificates in and out of date"
+  - "Unclear clauses become holds for approval, with clear twins on both sides"
+  - "Fully offline: a hash-seeded flight world with unguessable offer ids"
+steps:
+  - "Name a case, for example amber-tor, with the traveller's request"
+  - "The agent reads the trip record and searches flights on the trip's route and date"
+  - "It submits BOOK, REFUSE or FLAG_FOR_APPROVAL with the offer, cabin, reason, approver and section"
+  - "The verifier recomputes the policy's answer and checks every field"

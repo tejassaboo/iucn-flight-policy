@@ -1,0 +1,175 @@
+{
+  "id": "nutmeg-scar",
+  "category": "multi_rule",
+  "overlays": [
+    "multi_leg",
+    "dearer_option"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Zurich to Nairobi on March 8th for the UNEP coordination meeting on the 10th. Premium economy if the policy allows it; otherwise economy.",
+  "trip": {
+    "traveller_name": "Sara Lindholm",
+    "traveller_title": "Programme Officer, Ecosystem Management",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "NBO",
+    "travel_date": "2027-03-08",
+    "booking_date": "2027-02-02",
+    "purpose": "UN Environment Programme coordination meeting",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "PREMIUM_ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Jonas Berg",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": []
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "NBO",
+        "date": "2027-03-08",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "frankfurt": {
+            "carrier": "LH",
+            "via": [
+              "FRA"
+            ],
+            "depart": "06:50",
+            "minutes": [
+              50,
+              445
+            ],
+            "layovers": [
+              95
+            ]
+          },
+          "paris": {
+            "carrier": "AF",
+            "via": [
+              "CDG"
+            ],
+            "depart": "07:30",
+            "minutes": [
+              65,
+              450
+            ],
+            "layovers": [
+              100
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "frankfurt-economy",
+            "flight": "frankfurt",
+            "cabin": "ECONOMY",
+            "fare_cents": 76000
+          },
+          {
+            "slot": "frankfurt-premium",
+            "flight": "frankfurt",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 124000
+          },
+          {
+            "slot": "paris-economy",
+            "flight": "paris",
+            "cabin": "ECONOMY",
+            "fare_cents": 74500
+          },
+          {
+            "slot": "paris-premium",
+            "flight": "paris",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 131000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "frankfurt-premium"
+    ],
+    "cabins": [
+      "PREMIUM_ECONOMY"
+    ],
+    "reason_codes": [
+      "PREMIUM_ECONOMY_ALLOWED"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "CLASS_OF_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        253,
+        253
+      ],
+      "sha256": "282fa3dd2b56c703d8296b6ce63334b778f58b0a81380aa9ef4c0107bd7c41c4",
+      "quote": "a) Economy plus/premium class1 is allowed for total flying time of over 8 hours",
+      "why": "economy plus/premium for total flying time over eight hours"
+    },
+    {
+      "lines": [
+        251,
+        251
+      ],
+      "sha256": "7f5dd6d18f5332def84b8c878e1e5d21a285d7e56611d12397ca52ae5dca7282",
+      "quote": "All travel must be by economy class, with the following exceptions:",
+      "why": "all travel economy, with the exceptions below"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        294,
+        296
+      ],
+      "quote": "Economy premium or the equivalent is provided on limited number of airlines",
+      "why": "the footnote describes the cabin; it does not limit the permission"
+    }
+  ],
+  "design_notes": "Line 253 counts total flying time: the Frankfurt connection flies 50 + 445 = 495 minutes and the Paris one 65 + 450 = 515, each over 480 although no single flight is, and ground time is not flying time. Premium economy is allowed: the cheapest premium fare, Lufthansa at CHF 1,240."
+}

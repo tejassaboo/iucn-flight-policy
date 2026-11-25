@@ -1,0 +1,174 @@
+{
+  "id": "bracken-weir",
+  "category": "easy",
+  "overlays": [
+    "date_arithmetic",
+    "month_end"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Nairobi to Johannesburg on December 8th for the transfrontier parks meeting the following day. The cheapest economy seat, please.",
+  "trip": {
+    "traveller_name": "Wanjiru Kamau",
+    "traveller_title": "Programme Officer, Protected Areas",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "REGIONAL_OFFICE",
+    "rank": "STAFF",
+    "origin": "NBO",
+    "destination": "JNB",
+    "travel_date": "2026-12-08",
+    "booking_date": "2026-11-24",
+    "purpose": "Transfrontier conservation areas meeting with park authorities",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the Eastern and Southern Africa regional office",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Peter Mwangi",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": []
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "NBO",
+        "destination": "JNB",
+        "date": "2026-12-08",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "early": {
+            "carrier": "KQ",
+            "depart": "06:45",
+            "minutes": [
+              240
+            ]
+          },
+          "morning": {
+            "carrier": "SA",
+            "depart": "09:10",
+            "minutes": [
+              240
+            ]
+          },
+          "afternoon": {
+            "carrier": "KQ",
+            "depart": "15:30",
+            "minutes": [
+              240
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "early-economy",
+            "flight": "early",
+            "cabin": "ECONOMY",
+            "fare_cents": 29000,
+            "seats": false
+          },
+          {
+            "slot": "morning-economy",
+            "flight": "morning",
+            "cabin": "ECONOMY",
+            "fare_cents": 31500
+          },
+          {
+            "slot": "afternoon-economy",
+            "flight": "afternoon",
+            "cabin": "ECONOMY",
+            "fare_cents": 34200
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "morning-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "BOOKING",
+      "CLASS_OF_TRAVEL",
+      "COST_EFFECTIVENESS"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        233,
+        233
+      ],
+      "sha256": "c5705bff1c50dbe28109fba9ee5d0576e8b4275fb96481356bacd5b44e436301",
+      "quote": "b) The cost - the best possible fare should be secured.",
+      "why": "the best possible fare"
+    },
+    {
+      "lines": [
+        251,
+        251
+      ],
+      "sha256": "7f5dd6d18f5332def84b8c878e1e5d21a285d7e56611d12397ca52ae5dca7282",
+      "quote": "All travel must be by economy class, with the following exceptions:",
+      "why": "all travel economy, with the exceptions below"
+    },
+    {
+      "lines": [
+        581,
+        582
+      ],
+      "sha256": "c4318bd30035a7c91d989d20d9e58a56853401e4da85ab5d20c83aed4210c5cc",
+      "quote": "alternative proposals should be obtained (different routings, airlines, timings etc.) so as to obtain the most economical fare.",
+      "why": "alternative proposals, for the most economical fare"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        582,
+        583
+      ],
+      "quote": "Air tickets should be booked a minimum of two weeks in advance to avoid premium rates unless exceptional circumstances arise.",
+      "why": "fourteen days ahead is two weeks; it decides nothing here"
+    }
+  ],
+  "design_notes": "Economy (line 251) at the best possible fare (line 233): the 06:45 fare is sold out, so South African Airways at 09:10. Booked on November 24th for December 8th: 14 calendar days, two weeks, so the advance-booking line is met anyway."
+}

@@ -1,0 +1,161 @@
+{
+  "id": "amber-tor",
+  "category": "easy",
+  "overlays": [
+    "multi_leg",
+    "upgrade_not_taken"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "I need to get from Washington Dulles to Sao Paulo on February 15th for the Atlantic Forest restoration workshop, which opens on the 17th. Economy is fine. I'd like the United nonstop if the policy is OK with it.",
+  "trip": {
+    "traveller_name": "Daniel Okafor",
+    "traveller_title": "Senior Programme Officer, Forest Conservation",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "REGIONAL_OFFICE",
+    "rank": "STAFF",
+    "origin": "IAD",
+    "destination": "GRU",
+    "travel_date": "2027-02-15",
+    "booking_date": "2027-01-11",
+    "purpose": "Atlantic Forest restoration workshop with Brazilian partners",
+    "purpose_kind": "WORKSHOP",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": true,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the Washington office's forest programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Rebecca Lindqvist",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": [
+      "The traveller works in IUCN's Washington, DC office."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "IAD",
+        "destination": "GRU",
+        "date": "2027-02-15",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "united": {
+            "carrier": "UA",
+            "depart": "22:10",
+            "minutes": [
+              575
+            ]
+          },
+          "miami": {
+            "carrier": "AA",
+            "via": [
+              "MIA"
+            ],
+            "depart": "07:05",
+            "minutes": [
+              135,
+              500
+            ],
+            "layovers": [
+              85
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "united-economy",
+            "flight": "united",
+            "cabin": "ECONOMY",
+            "fare_cents": 148000
+          },
+          {
+            "slot": "miami-economy",
+            "flight": "miami",
+            "cabin": "ECONOMY",
+            "fare_cents": 69000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "miami-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "ALTERNATE_ROUTE_TOO_EXPENSIVE",
+      "COST_SAVINGS",
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "BOOKING",
+      "COST_EFFECTIVENESS"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        230,
+        231
+      ],
+      "sha256": "0091d22509999e6541655c48c3ff5784478b9f00c9602c16644d2e18bbc3615b",
+      "quote": "a) The route - normally the most direct route should be taken, unless there are significant financial gains from taking an alternative route.",
+      "why": "the most direct route unless an alternative gives significant financial gains"
+    },
+    {
+      "lines": [
+        233,
+        233
+      ],
+      "sha256": "c5705bff1c50dbe28109fba9ee5d0576e8b4275fb96481356bacd5b44e436301",
+      "quote": "b) The cost - the best possible fare should be secured.",
+      "why": "the best possible fare"
+    },
+    {
+      "lines": [
+        581,
+        582
+      ],
+      "sha256": "c4318bd30035a7c91d989d20d9e58a56853401e4da85ab5d20c83aed4210c5cc",
+      "quote": "alternative proposals should be obtained (different routings, airlines, timings etc.) so as to obtain the most economical fare.",
+      "why": "alternative proposals, for the most economical fare"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "The traveller prefers the nonstop, but the Miami connection costs CHF 690 against CHF 1,480: it saves CHF 790, 53% of the nonstop fare, a significant financial gain on any reading of lines 230-231, so the alternative route and the best possible fare (line 233; line 581, the most economical fare). Both arrive well before the 17th. Total flying time is over eight hours, so premium economy would be allowed, but economy is what was asked."
+}

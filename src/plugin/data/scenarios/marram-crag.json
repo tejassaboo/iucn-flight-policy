@@ -1,0 +1,187 @@
+{
+  "id": "marram-crag",
+  "category": "multi_rule",
+  "overlays": [
+    "dearer_option",
+    "outside_air_section"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Zurich to Singapore on March 2nd for the ASEAN heritage parks conference, which opens on the 4th. The project's donor has told us its grant will happily pay for business class, so business please. If business isn't allowed, put me in the best cabin the policy does allow.",
+  "trip": {
+    "traveller_name": "Lukas Brunner",
+    "traveller_title": "Coordinator, Asia Protected Areas Partnership",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "SIN",
+    "travel_date": "2027-03-02",
+    "booking_date": "2027-01-26",
+    "purpose": "ASEAN heritage parks conference",
+    "purpose_kind": "CONFERENCE",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "BUSINESS",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "IUCN",
+    "funding": "The Asia Protected Areas Partnership project grant, held by the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "WILL_PAY_BUSINESS",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Mei Tanaka",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": [
+      "The donor has written that its grant may pay for a business-class seat on this trip."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "SIN",
+        "date": "2027-03-02",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "22:05",
+            "minutes": [
+              765
+            ]
+          },
+          "singapore": {
+            "carrier": "SQ",
+            "depart": "11:55",
+            "minutes": [
+              765
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 98000
+          },
+          {
+            "slot": "swiss-premium",
+            "flight": "swiss",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 165000
+          },
+          {
+            "slot": "swiss-business",
+            "flight": "swiss",
+            "cabin": "BUSINESS",
+            "fare_cents": 490000
+          },
+          {
+            "slot": "singapore-economy",
+            "flight": "singapore",
+            "cabin": "ECONOMY",
+            "fare_cents": 102000
+          },
+          {
+            "slot": "singapore-premium",
+            "flight": "singapore",
+            "cabin": "PREMIUM_ECONOMY",
+            "fare_cents": 159000
+          },
+          {
+            "slot": "singapore-business",
+            "flight": "singapore",
+            "cabin": "BUSINESS",
+            "fare_cents": 520000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "singapore-premium"
+    ],
+    "cabins": [
+      "PREMIUM_ECONOMY"
+    ],
+    "reason_codes": [
+      "DONOR_FUNDING_NOT_SUFFICIENT",
+      "PREMIUM_ECONOMY_ALLOWED",
+      "UPGRADE_NOT_ELIGIBLE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "CLASS_OF_TRAVEL",
+      "EQUITABLE_APPLICABILITY"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        274,
+        274
+      ],
+      "sha256": "29caa78a7dd34921b2a242d830646f8e1af012d3d7101951f6bc55998e569e02",
+      "quote": "The willingness of a donor to fund business class travel is not sufficient justification.",
+      "why": "a donor's willingness to fund business is not sufficient justification"
+    },
+    {
+      "lines": [
+        276,
+        276
+      ],
+      "sha256": "39a7d136049bc4cece74d2d698f0e40b46fa66b060c1716938024267769b7cda",
+      "quote": "These restrictions on business class travel apply to all trips regardless of the source of funding.",
+      "why": "the business restrictions apply whatever the funding"
+    },
+    {
+      "lines": [
+        181,
+        183
+      ],
+      "sha256": "a913f23ce84b242af8de91d36259ab3badd1ff54b4ab39f0dc7126fcfffc65dc",
+      "quote": "This policy applies to duty travel irrespective of the funding source and irrespective of donors' own rules. In the event that certain costs are allowed by this policy but not by the donor funding the travel, the disallowed costs should be charged against other funding sources.",
+      "why": "the policy applies irrespective of donors' own rules"
+    },
+    {
+      "lines": [
+        253,
+        253
+      ],
+      "sha256": "282fa3dd2b56c703d8296b6ce63334b778f58b0a81380aa9ef4c0107bd7c41c4",
+      "quote": "a) Economy plus/premium class1 is allowed for total flying time of over 8 hours",
+      "why": "economy plus/premium for total flying time over eight hours"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Line 274: the willingness of a donor to fund business class is not sufficient justification, and lines 276 and 181 apply the rules whatever the funding. No other business ground applies. The 765-minute flight is over eight hours, so the best cabin allowed is economy plus/premium (line 253): the cheapest, Singapore Airlines at CHF 1,590."
+}

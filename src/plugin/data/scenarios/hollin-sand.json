@@ -1,0 +1,137 @@
+{
+  "id": "hollin-sand",
+  "category": "boundary_twin",
+  "overlays": [
+    "outside_air_section"
+  ],
+  "twin_of": "ivory-garth",
+  "twin_fact": "the train takes 239 or 240 minutes",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Please book me a flight from Zurich to Frankfurt on February 4th for the KfW portfolio review, which starts at 10:00 the next day.",
+  "trip": {
+    "traveller_name": "Anna Weber",
+    "traveller_title": "Senior Finance Officer, Donor Relations",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "FRA",
+    "travel_date": "2027-02-04",
+    "booking_date": "2027-01-07",
+    "purpose": "Portfolio review with KfW Development Bank",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 239,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Marc Dubois",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": []
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "FRA",
+        "date": "2027-02-04",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "07:15",
+            "minutes": [
+              50
+            ]
+          },
+          "lufthansa": {
+            "carrier": "LH",
+            "depart": "09:30",
+            "minutes": [
+              50
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 21000
+          },
+          {
+            "slot": "lufthansa-economy",
+            "flight": "lufthansa",
+            "cabin": "ECONOMY",
+            "fare_cents": 19500
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "REFUSE",
+    "offer_slots": [],
+    "cabins": [
+      "NONE"
+    ],
+    "reason_codes": [
+      "RAIL_PREFERRED"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "ENVIRONMENTAL_ACCOUNTABILITY",
+      "TRANSPORTATION"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        220,
+        221
+      ],
+      "sha256": "2ed235ff52c35460436d43c457459a6fb0e652a8884776b7060418fc3c6df088",
+      "quote": "When the travel duration in one direction is under four hours by train, travel should be undertaken by train rather than air.",
+      "why": "under four hours by train in one direction: train, not air"
+    },
+    {
+      "lines": [
+        95,
+        97
+      ],
+      "sha256": "551c1fa32fdd3c1b8a0fd51d89fa859b1bcb06f9ba383bc38785f074fd6ad378",
+      "quote": "As a result, IUCN staff members and others who travel on behalf of IUCN are encouraged to limit the amount of travel they undertake and travel in environmentally responsible ways in order to minimize the overall environmental footprint of the organization.",
+      "why": "travel in environmentally responsible ways"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        288,
+        290
+      ],
+      "quote": "First class travel is authorized on sea, train, bus or other public transportation systems for travel durations exceeding two hours",
+      "why": "first class on trains, not on flights"
+    }
+  ],
+  "design_notes": "Line 220: when the travel duration in one direction is under four hours by train, travel should be by train rather than air. The train takes 239 minutes, under 240: no air ticket is bought. The TA on file is not what the refusal rests on (NONE or LINE_MANAGER)."
+}

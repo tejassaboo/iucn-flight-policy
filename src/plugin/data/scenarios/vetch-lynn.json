@@ -1,0 +1,167 @@
+{
+  "id": "vetch-lynn",
+  "category": "flag",
+  "overlays": [
+    "multi_leg",
+    "unclear_phrase"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [
+    "rushy-knap",
+    "amber-tor"
+  ],
+  "ambiguity_note": {
+    "phrase": "significant financial gains",
+    "readings": [
+      "CHF 85, a fifth of the fare, is a significant financial gain: the cheaper connection",
+      "CHF 85 on a short European trip is not significant beside more than two hours more travel: the most direct route, the nonstop"
+    ]
+  },
+  "request": "Zurich to Copenhagen on March 3rd for the Nordic biodiversity strategy meeting on the 4th. I'd rather take the nonstop if the policy is fine with it.",
+  "trip": {
+    "traveller_name": "Erik Johansson",
+    "traveller_title": "Programme Officer, European Biodiversity Policy",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "ZRH",
+    "destination": "CPH",
+    "travel_date": "2027-03-03",
+    "booking_date": "2027-02-01",
+    "purpose": "Nordic Council biodiversity strategy meeting",
+    "purpose_kind": "MEETING",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": true,
+    "dates_may_change": false,
+    "rail_minutes": 690,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Ines Moreau",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": []
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ZRH",
+        "destination": "CPH",
+        "date": "2027-03-03",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "swiss": {
+            "carrier": "LX",
+            "depart": "07:50",
+            "minutes": [
+              100
+            ]
+          },
+          "frankfurt": {
+            "carrier": "LH",
+            "via": [
+              "FRA"
+            ],
+            "depart": "07:05",
+            "minutes": [
+              50,
+              80
+            ],
+            "layovers": [
+              115
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 43000
+          },
+          {
+            "slot": "frankfurt-economy",
+            "flight": "frankfurt",
+            "cabin": "ECONOMY",
+            "fare_cents": 34500
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "FLAG_FOR_APPROVAL",
+    "offer_slots": [
+      "frankfurt-economy",
+      "swiss-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "APPROVAL_REQUIRED",
+      "UNCLEAR_POLICY_TEXT"
+    ],
+    "approvers": [
+      "LINE_MANAGER",
+      "NOT_NAMED"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "AUTHORIZATION"
+    ],
+    "unclear_phrase": "significant financial gains"
+  },
+  "must_keep": [
+    {
+      "lines": [
+        230,
+        231
+      ],
+      "sha256": "0091d22509999e6541655c48c3ff5784478b9f00c9602c16644d2e18bbc3615b",
+      "quote": "a) The route - normally the most direct route should be taken, unless there are significant financial gains from taking an alternative route.",
+      "why": "the most direct route unless an alternative gives significant financial gains"
+    },
+    {
+      "lines": [
+        233,
+        233
+      ],
+      "sha256": "c5705bff1c50dbe28109fba9ee5d0576e8b4275fb96481356bacd5b44e436301",
+      "quote": "b) The cost - the best possible fare should be secured.",
+      "why": "the best possible fare"
+    },
+    {
+      "lines": [
+        568,
+        571
+      ],
+      "sha256": "9e5292773e0a0fbc5d0462f19ed24f4108138719a4d4382c041e75d3725b0ad9",
+      "quote": "For airline travel it is not necessary to obtain 3 alternative ticket proposals prior to the approval of the TA. These would normally be obtained after approval of the TA. The proposals should be retained by the individual traveller and discussed with the traveller's supervisor in the event that the choice of ticket is not obvious, taking into account the criteria in section II 2.1.",
+      "why": "a choice of ticket that is not obvious is discussed with the supervisor"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "The Frankfurt connection costs CHF 345 against the nonstop's CHF 430: it saves CHF 85, about 20%, and adds 145 minutes. Lines 230-231 keep the most direct route 'unless there are significant financial gains from taking an alternative route', and the handbook gives no measure. Lines 569-571 send a choice of ticket that is not obvious to the traveller's supervisor: hold either offer."
+}

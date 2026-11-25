@@ -1,0 +1,178 @@
+{
+  "id": "quillwort-bend",
+  "category": "hidden_clause",
+  "overlays": [
+    "personal_travel",
+    "multi_leg",
+    "outside_air_section"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "I'm on leave in Barcelona, and my manager asked me to attend the FAO meeting in Rome, which starts the morning of March 3rd. Please book me Barcelona to Rome on March 2nd; I'll get myself back to Barcelona afterwards.",
+  "trip": {
+    "traveller_name": "Lucia Romero",
+    "traveller_title": "Senior Programme Officer, Mediterranean Cooperation",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "HEADQUARTERS",
+    "rank": "STAFF",
+    "origin": "BCN",
+    "destination": "FCO",
+    "travel_date": "2027-03-02",
+    "booking_date": "2027-02-01",
+    "purpose": "One-day meeting at FAO in Rome, added to the traveller's annual leave in Barcelona",
+    "purpose_kind": "MEETING",
+    "personal_part": "WORK_VISIT_ADDED_TO_PERSONAL_TRIP",
+    "requested_cabin": "ECONOMY",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 1140,
+    "ticket_paid_by": "IUCN",
+    "funding": "Core funds of the traveller's own programme",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Ines Moreau",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": [
+      "The traveller is on annual leave in Barcelona from February 20th to March 7th; the line manager asked her to attend the Rome meeting during it."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BCN",
+        "destination": "FCO",
+        "date": "2027-03-02",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "iberia": {
+            "carrier": "IB",
+            "via": [
+              "MAD"
+            ],
+            "depart": "07:20",
+            "minutes": [
+              65,
+              125
+            ],
+            "layovers": [
+              70
+            ]
+          },
+          "swiss": {
+            "carrier": "LX",
+            "via": [
+              "ZRH"
+            ],
+            "depart": "10:05",
+            "minutes": [
+              90,
+              80
+            ],
+            "layovers": [
+              60
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "iberia-economy",
+            "flight": "iberia",
+            "cabin": "ECONOMY",
+            "fare_cents": 23000
+          },
+          {
+            "slot": "swiss-economy",
+            "flight": "swiss",
+            "cabin": "ECONOMY",
+            "fare_cents": 25500
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "iberia-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "BOOKING",
+      "CLASS_OF_TRAVEL",
+      "COST_EFFECTIVENESS",
+      "COMBINED_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        535,
+        536
+      ],
+      "sha256": "af577202daba2ae1609f6bc84f73b9fc2e1913406ffded665f0e9c13da52cfcd",
+      "quote": "In instances where the primary objective of travel is personal travel, but the person chooses to add on a work-related visit, the allowable costs are the incremental costs of the work-related trip. IUCN's Global",
+      "why": "a mainly personal trip: only the work visit's incremental costs are allowable"
+    },
+    {
+      "lines": [
+        233,
+        233
+      ],
+      "sha256": "c5705bff1c50dbe28109fba9ee5d0576e8b4275fb96481356bacd5b44e436301",
+      "quote": "b) The cost - the best possible fare should be secured.",
+      "why": "the best possible fare"
+    },
+    {
+      "lines": [
+        251,
+        251
+      ],
+      "sha256": "7f5dd6d18f5332def84b8c878e1e5d21a285d7e56611d12397ca52ae5dca7282",
+      "quote": "All travel must be by economy class, with the following exceptions:",
+      "why": "all travel economy, with the exceptions below"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        536,
+        538
+      ],
+      "quote": "IUCN's Global Travel Insurance will only cover the staff member for a personal trip li nked to duty travel if they stay in the city where their work will be conducted.",
+      "why": "insurance cover for the personal part, not who buys the flight"
+    }
+  ],
+  "design_notes": "Lines 535-536: where the primary objective of travel is personal and a work-related visit is added, the allowable costs are the incremental costs of the work-related trip. The Barcelona-Rome flight exists only for the FAO meeting, so it is that incremental cost: IUCN buys it, economy at the best fare, Iberia at CHF 230."
+}

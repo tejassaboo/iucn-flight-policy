@@ -1,0 +1,154 @@
+{
+  "id": "egret-moor",
+  "category": "easy",
+  "overlays": [
+    "dearer_option"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "I'm travelling with Kenya's Cabinet Secretary for Environment to the African ministerial conference in Cairo on February 22nd, on the morning Kenya Airways flight. The ministry is paying for my ticket and has booked her in business; they've asked that I sit with her.",
+  "trip": {
+    "traveller_name": "Brian Otieno",
+    "traveller_title": "Regional Programme Coordinator, Drylands",
+    "staff_category": "STAFF_MEMBER",
+    "duty_station": "REGIONAL_OFFICE",
+    "rank": "STAFF",
+    "origin": "NBO",
+    "destination": "CAI",
+    "travel_date": "2027-02-22",
+    "booking_date": "2027-01-18",
+    "purpose": "Accompanying Kenya's Cabinet Secretary for Environment to the African ministerial conference on the environment",
+    "purpose_kind": "CONFERENCE",
+    "personal_part": "NO_PERSONAL_PART",
+    "requested_cabin": "BUSINESS",
+    "wants_nonstop": false,
+    "dates_may_change": false,
+    "rail_minutes": 0,
+    "ticket_paid_by": "ANOTHER_ORGANISATION",
+    "funding": "Paid directly by Kenya's Ministry of Environment",
+    "own_cost_centre": true,
+    "donor_cabin_terms": "NOT_STATED",
+    "medical_certificate_date": "",
+    "risk_check": "NO_SPECIAL_RISK",
+    "accompanies_flight": "KQ 1437",
+    "sign_offs": [
+      {
+        "role": "LINE_MANAGER",
+        "name": "Peter Mwangi",
+        "subject": "TRAVEL_AUTHORIZATION"
+      }
+    ],
+    "notes": [
+      "The ministry pays the airline for this ticket itself and has asked IUCN to book the seat beside the Cabinet Secretary, who flies business class."
+    ]
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "NBO",
+        "destination": "CAI",
+        "date": "2027-02-22",
+        "return_date": "",
+        "background": 0,
+        "flights": {
+          "kenya": {
+            "carrier": "KQ",
+            "depart": "09:40",
+            "minutes": [
+              285
+            ]
+          },
+          "egypt": {
+            "carrier": "MS",
+            "depart": "13:20",
+            "minutes": [
+              285
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "kenya-economy",
+            "flight": "kenya",
+            "cabin": "ECONOMY",
+            "fare_cents": 30000
+          },
+          {
+            "slot": "kenya-business",
+            "flight": "kenya",
+            "cabin": "BUSINESS",
+            "fare_cents": 115000
+          },
+          {
+            "slot": "egypt-economy",
+            "flight": "egypt",
+            "cabin": "ECONOMY",
+            "fare_cents": 28000
+          },
+          {
+            "slot": "egypt-business",
+            "flight": "egypt",
+            "cabin": "BUSINESS",
+            "fare_cents": 99000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "kenya-business"
+    ],
+    "cabins": [
+      "BUSINESS"
+    ],
+    "reason_codes": [
+      "CLIENT_REIMBURSABLE",
+      "THIRD_PARTY_PAYS_TICKET"
+    ],
+    "approvers": [
+      "NONE",
+      "LINE_MANAGER"
+    ],
+    "clauses": [
+      "AIR_TRAVEL",
+      "CLASS_OF_TRAVEL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        270,
+        272
+      ],
+      "sha256": "0d707ef993a9ac823c74aff54320650cdb5f89bbb108d443195e80296cd08809",
+      "quote": "iii. Another entity is paying for the ticket and it would not be appropriate to refuse the offer, e.g. when accompanying a VIP on a trip and that person is travelling in business class.",
+      "why": "business when another entity pays and refusing would be inappropriate"
+    },
+    {
+      "lines": [
+        251,
+        251
+      ],
+      "sha256": "7f5dd6d18f5332def84b8c878e1e5d21a285d7e56611d12397ca52ae5dca7282",
+      "quote": "All travel must be by economy class, with the following exceptions:",
+      "why": "all travel economy, with the exceptions below"
+    },
+    {
+      "lines": [
+        562,
+        563
+      ],
+      "sha256": "fc04eac20864d419f1d78c13d82fadaf6f060be751ef64098f0dd47fd69ca8b9",
+      "quote": "The TA must be approved by the traveller's line manager prior to travel and before any commitments are made.",
+      "why": "the line manager approves the TA before any commitment"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Line 270-272: another entity is paying for the ticket and it would not be appropriate to refuse, e.g. when accompanying a VIP travelling in business class. Business on the Cabinet Secretary's Kenya Airways flight, not the cheaper EgyptAir business seat on another flight."
+}

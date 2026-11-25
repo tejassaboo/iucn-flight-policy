@@ -1,0 +1,16 @@
+{
+  "id": "iucn-flight-policy",
+  "name": "IUCN Flight Policy",
+  "slug": "iucn",
+  "title": "IUCN Travel Policy and Procedures, Version 2.1 (April 2019)",
+  "frozen_file": "iucn_policy.txt",
+  "sha256": "2cd8907c9c4dbb23dea12781c2b0aac54d8b4d03ce8c4f7b358b431b39032832",
+  "raw_pdf_sha256": "5de9614339d3c46532560e2f5dabc3a519cc11217c7abe6645e34423132f3d84",
+  "words": 4939,
+  "lines": 631,
+  "source": "not recorded locally (UNVERIFIED); the raw PDF pilot_work/originals/iucn/raw_iucn.pdf (sha256 5de96143...2f3d84) is the pinned copy",
+  "frozen_on": "2026-11-24",
+  "scenario_count": 24,
+  "currency": "CHF",
+  "background_offers": 0
+}
