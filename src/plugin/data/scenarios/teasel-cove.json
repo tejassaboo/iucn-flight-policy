@@ -36,7 +36,7 @@
     "sign_offs": [],
     "notes": [
       "The field site lies in a district where a severe haemorrhagic fever outbreak was declared on January 20th; the health authority has no vaccine or treatment and has asked visitors to stay away.",
-      "The line manager's check on January 25th found no precaution that brings the risk down to an acceptable level, and the TA was not approved.",
+      "The line manager's check on January 25th found no precaution that brings the risk down to an acceptable level, and the line manager declined to approve the TA.",
       "The traveller works in IUCN's Washington, DC office."
     ]
   },
@@ -96,6 +96,7 @@
       "LINE_MANAGER"
     ],
     "clauses": [
+      "AUTHORIZATION",
       "HEALTH_SAFETY_SECURITY",
       "HEALTH_SECURITY_WARNINGS"
     ],

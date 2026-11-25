@@ -172,7 +172,9 @@ scenario(
          duty_station="REGIONAL_OFFICE", origin="IAD", destination="GRU", travel_date="2027-02-15",
          booking_date="2027-01-11", purpose="Atlantic Forest restoration workshop with Brazilian partners",
          purpose_kind="WORKSHOP", wants_nonstop=True, funding="Core funds of the Washington office's forest programme",
-         sign_offs=ta("Rebecca Lindqvist"), notes=["The traveller works in IUCN's Washington, DC office."]),
+         sign_offs=ta("Rebecca Lindqvist"),
+         notes=["The traveller works in IUCN's Washington, DC office.",
+                "The traveller has no work planned on February 15th or 16th, so either flight fits the trip's schedule."]),
     search("IAD", "GRU", "2027-02-15", {
         "united": {"carrier": "UA", "depart": "22:10", "minutes": [575]},
         "miami": {"carrier": "AA", "via": ["MIA"], "depart": "07:05", "minutes": [135, 500], "layovers": [85]},
@@ -257,7 +259,7 @@ scenario(
         offer("munich-flex", "munich", "ECONOMY", 29_000, refundable=True),
     ]),
     expected("BOOK", ["early-flex"], ["ECONOMY"], ["FLEXIBLE_FARE_NEEDED", "LOWEST_FARE"], BOOKED,
-             ["AIR_TRAVEL", "PLANNING_AND_BUDGET"]),
+             ["AIR_TRAVEL", "BOOKING", "CLASS_OF_TRAVEL", "COST_EFFECTIVENESS", "PLANNING_AND_BUDGET"]),
     [FLEXIBILITY, CHANGEABLE, BEST_FARE, TA],
     "The dates are likely to change, so the ticket should be changeable without significant extra cost (lines 238-240; "
     "lines 548-549). The cheapest changeable fare is the 07:10 Swiss nonstop at CHF 265; the cheaper saver fares cannot "
@@ -283,8 +285,8 @@ scenario(
          "ministerial conference on the environment", purpose_kind="CONFERENCE", requested_cabin="BUSINESS",
          ticket_paid_by="ANOTHER_ORGANISATION", funding="Paid directly by Kenya's Ministry of Environment",
          accompanies_flight=first_flight("egret-moor", kenya_cairo, "kenya-business"), sign_offs=ta("Peter Mwangi"),
-         notes=[("The ministry pays the airline for this ticket itself and has asked IUCN to book the seat beside the "
-                "Cabinet Secretary, who flies business class.")]),
+         notes=[("IUCN books and issues this ticket, and the ministry pays the airline for it directly; the ministry "
+                "has asked IUCN to book the seat beside the Cabinet Secretary, who flies business class.")]),
     kenya_cairo,
     expected("BOOK", ["kenya-business"], ["BUSINESS"], ["CLIENT_REIMBURSABLE", "THIRD_PARTY_PAYS_TICKET"], BOOKED,
              CLASS),
@@ -311,7 +313,9 @@ def nairobi(minutes):
 
 NAIROBI_TRIP = {"origin": "ZRH", "destination": "NBO", "travel_date": "2027-02-07", "booking_date": "2027-01-08",
                     "purpose": "Regional programme planning week at the Nairobi office", "requested_cabin": "PREMIUM_ECONOMY",
-                    "funding": HQ, "sign_offs": ta("Sofia Lindgren")}
+                    "funding": HQ, "sign_offs": ta("Sofia Lindgren"),
+                    "notes": [("The return is not yet planned: after the planning week the traveller may go on to field "
+                               "work elsewhere in the region, and that travel will be booked separately.")]}
 
 scenario(
     "flint-heron", "boundary_twin", ["dearer_option"], NAIROBI_REQUEST,
@@ -350,7 +354,9 @@ def frankfurt():
 
 FRANKFURT_TRIP = {"traveller_name": "Anna Weber", "traveller_title": "Senior Finance Officer, Donor Relations",
                       "origin": "ZRH", "destination": "FRA", "travel_date": "2027-02-04", "booking_date": "2027-01-07",
-                      "purpose": "Portfolio review with KfW Development Bank", "funding": HQ, "sign_offs": ta("Marc Dubois")}
+                      "purpose": "Portfolio review with KfW Development Bank", "funding": HQ, "sign_offs": ta("Marc Dubois"),
+                      "notes": [("Any train ticket for this trip is bought separately through the rail desk, not through "
+                                 "this flight booking.")]}
 
 scenario(
     "hollin-sand", "boundary_twin", ["outside_air_section"], FRANKFURT_REQUEST,
@@ -391,7 +397,9 @@ def dubai():
 DUBAI_TRIP = {"traveller_name": "Claire Fontaine", "traveller_title": "Senior Programme Officer, Marine and Polar",
                   "origin": "ZRH", "destination": "DXB", "travel_date": "2027-01-18", "booking_date": "2026-12-03",
                   "purpose": "Gulf mangrove restoration partners' meeting", "requested_cabin": "BUSINESS", "funding": HQ,
-                  "sign_offs": ta("Henrik Larsen")}
+                  "sign_offs": ta("Henrik Larsen"),
+                  "notes": [("The traveller next sees the specialist in March 2027, so Human Resources will receive no "
+                             "newer certificate before this trip.")]}
 
 scenario(
     "jasper-wold", "boundary_twin", ["date_arithmetic", "dearer_option"], DUBAI_REQUEST,
@@ -660,7 +668,7 @@ scenario(
          notes=[("The field site lies in a district where a severe haemorrhagic fever outbreak was declared on January "
                 "20th; the health authority has no vaccine or treatment and has asked visitors to stay away."),
                 ("The line manager's check on January 25th found no precaution that brings the risk down to an "
-                "acceptable level, and the TA was not approved."),
+                "acceptable level, and the line manager declined to approve the TA."),
                 "The traveller works in IUCN's Washington, DC office."]),
     search("IAD", "MEX", "2027-02-16", {
         "united": {"carrier": "UA", "depart": "09:15", "minutes": [245]},
@@ -670,7 +678,7 @@ scenario(
         offer("aeromexico-economy", "aeromexico", "ECONOMY", 35_500),
     ]),
     expected("REFUSE", [], ["NONE"], ["TRAVEL_RISK_NOT_MITIGATED"], BOOKED,
-             ["HEALTH_SAFETY_SECURITY", "HEALTH_SECURITY_WARNINGS"]),
+             ["AUTHORIZATION", "HEALTH_SAFETY_SECURITY", "HEALTH_SECURITY_WARNINGS"]),
     [DOUBT, NO_MEASURES],
     "Lines 125-126: if there is any doubt as to whether staff may be exposed to a high security or health risk, they "
     "should not travel; lines 157-158: where measures to reduce the risks to acceptable levels cannot be found, travel "
@@ -695,7 +703,7 @@ scenario(
         offer("aerlingus-economy", "aerlingus", "ECONOMY", 23_500),
     ]),
     expected("REFUSE", [], ["NONE"], ["OUTSIDE_POLICY_SCOPE", "PERSONAL_TRAVEL_NOT_COVERED"], BOOKED,
-             ["COMBINED_TRAVEL"]),
+             ["COMBINED_TRAVEL", "PURPOSE"]),
     [PRIMARY_PERSONAL, ADDED],
     "Lines 535-536: where the primary objective of travel is personal and a work-related visit is added, the allowable "
     "costs are the incremental costs of the work-related trip. The visit is in Dublin, where the holiday already takes "
@@ -769,7 +777,7 @@ scenario(
         offer("klm-premium", "klm", "PREMIUM_ECONOMY", 121_000),
     ]),
     expected("FLAG_FOR_APPROVAL", ["klm-economy"], ["ECONOMY"], ["APPROVAL_REQUIRED"], ["BUDGET_HOLDER"],
-             ["AUTHORIZATION"]),
+             ["AUTHORIZATION", "PLANNING_AND_BUDGET"]),
     [BUDGET, TA, BEST_FARE],
     "Lines 562-566: the TA must be approved before any commitments are made, and travel funded by a different cost "
     "centre than the traveller's own must also be authorized by the budget holder. Only the line manager has signed: "

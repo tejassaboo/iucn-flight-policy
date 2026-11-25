@@ -112,7 +112,8 @@
       "BUDGET_HOLDER"
     ],
     "clauses": [
-      "AUTHORIZATION"
+      "AUTHORIZATION",
+      "PLANNING_AND_BUDGET"
     ],
     "unclear_phrase": ""
   },

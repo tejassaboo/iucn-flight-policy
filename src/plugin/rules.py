@@ -183,7 +183,7 @@ def solve(trip, offers, hidden):
             raise ValueError("a personal trip other than a work visit added to a holiday is not modelled")
         # SYNC_NOTES 4(b): the line manager's agreement on file is not what the refusal rests on.
         return answer(Decision.REFUSE, [], [ReasonCode.PERSONAL_TRAVEL_NOT_COVERED, ReasonCode.OUTSIDE_POLICY_SCOPE],
-                      [Approver.NONE, *on_file], [Clause.COMBINED_TRAVEL],
+                      [Approver.NONE, *on_file], [Clause.COMBINED_TRAVEL, Clause.PURPOSE],
                       "Lines 535-536: where the primary objective of travel is personal travel and a work-related "
                       "visit is added, the allowable costs are the incremental costs of the work-related trip. The "
                       "flight goes to the holiday destination, where the visit also takes place, so the visit adds no "
@@ -192,7 +192,7 @@ def solve(trip, offers, hidden):
         if authorization:
             raise ValueError("an approved TA with no precaution found is not modelled")
         return answer(Decision.REFUSE, [], [ReasonCode.TRAVEL_RISK_NOT_MITIGATED], [Approver.NONE, Approver.LINE_MANAGER],
-                      [Clause.HEALTH_SAFETY_SECURITY, Clause.HEALTH_SECURITY_WARNINGS],
+                      [Clause.HEALTH_SAFETY_SECURITY, Clause.HEALTH_SECURITY_WARNINGS, Clause.AUTHORIZATION],
                       "Lines 125-126: if there is any doubt as to whether staff may be exposed to a high security or "
                       "health risk, they should not travel; lines 157-158: where measures to reduce the risks to "
                       "acceptable levels cannot be found, travel should not be undertaken. The line manager's check "
@@ -220,7 +220,7 @@ def solve(trip, offers, hidden):
             if decision != Decision.BOOK:
                 raise ValueError("a missing budget holder's sign-off on a hold is not modelled")
             return answer(Decision.FLAG_FOR_APPROVAL, chosen, [ReasonCode.APPROVAL_REQUIRED], [Approver.BUDGET_HOLDER],
-                          [Clause.AUTHORIZATION],
+                          [Clause.AUTHORIZATION, Clause.PLANNING_AND_BUDGET],
                           "Lines 564-566: travel funded by a different cost centre than the traveller's own must also "
                           "be authorized by the budget holder, and the TA must be approved before any commitments are "
                           f"made (line 563). Only the line manager has signed: hold the ticket the request would "
@@ -293,7 +293,8 @@ def economy(trip, seated):
     if trip.dates_may_change:
         pool = [offer for offer in pool if offer.refundable]
         reasons.append(ReasonCode.FLEXIBLE_FARE_NEEDED)
-        clauses = [Clause.AIR_TRAVEL, Clause.PLANNING_AND_BUDGET]
+        # LOWEST_FARE is accepted (the changeable fare asked for is booked), so the lowest-fare sections are too.
+        clauses = [*LOW, Clause.PLANNING_AND_BUDGET]
         notes.append("lines 238-240 and 548-549: the dates are likely to change, so the ticket must be changeable "
                      "without significant extra cost: the cheapest changeable fare")
     if trip.donor_cabin_terms != DonorCabinTerms.NOT_STATED:

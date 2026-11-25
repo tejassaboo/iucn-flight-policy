@@ -38,7 +38,9 @@
         "subject": "TRAVEL_AUTHORIZATION"
       }
     ],
-    "notes": []
+    "notes": [
+      "Any train ticket for this trip is bought separately through the rail desk, not through this flight booking."
+    ]
   },
   "world": {
     "searches": [

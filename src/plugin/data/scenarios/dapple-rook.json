@@ -139,6 +139,9 @@
     ],
     "clauses": [
       "AIR_TRAVEL",
+      "BOOKING",
+      "CLASS_OF_TRAVEL",
+      "COST_EFFECTIVENESS",
       "PLANNING_AND_BUDGET"
     ],
     "unclear_phrase": ""

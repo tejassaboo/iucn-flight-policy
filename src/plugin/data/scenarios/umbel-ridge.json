@@ -102,7 +102,8 @@
       "LINE_MANAGER"
     ],
     "clauses": [
-      "COMBINED_TRAVEL"
+      "COMBINED_TRAVEL",
+      "PURPOSE"
     ],
     "unclear_phrase": ""
   },
