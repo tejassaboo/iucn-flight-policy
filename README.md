@@ -1,5 +1,7 @@
 # IUCN Flight Policy
 
+**Source of the handbook:** https://iucn.org/sites/default/files/2022-08/iucn_travel_policy_for_staff_v2.1_april2019.pdf. The agent reads it verbatim (bundled at `src/plugin/data/policy.txt`); flights, fares and trips are synthetic.
+
 **No affiliation with IUCN.** The handbook is the International Union for Conservation of Nature's *Travel Policy
 and Procedures*, Version 2.1 (April 2019), a published policy of the union, bundled verbatim for research. Its public
 source URL was not recorded (the raw PDF under `pilot_work/originals/iucn/` is the pinned copy): confirm the URL
