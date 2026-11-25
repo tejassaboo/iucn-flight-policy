@@ -8,7 +8,7 @@
   "raw_pdf_sha256": "5de9614339d3c46532560e2f5dabc3a519cc11217c7abe6645e34423132f3d84",
   "words": 4939,
   "lines": 631,
-  "source": "not recorded locally (UNVERIFIED); the raw PDF pilot_work/originals/iucn/raw_iucn.pdf (sha256 5de96143...2f3d84) is the pinned copy",
+  "source": "https://iucn.org/sites/default/files/2022-08/iucn_travel_policy_for_staff_v2.1_april2019.pdf; byte-identical to the pinned raw PDF (sha256 checked 2026-11-25)",
   "frozen_on": "2026-11-24",
   "scenario_count": 24,
   "currency": "CHF",
